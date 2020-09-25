@@ -1,3 +1,20 @@
+svxlink (19.09.1-3) unstable; urgency=medium
+
+  * Transfer maintenance to Hamradio team; add self to Uploaders.
+  * Add team repo to Vcs-Git and Vcs-Browser.
+  * Ship svxreflector default and systemd service files from upstream.
+  * Remove obsolete syslog target from svxreflector service file.
+  * Ship additional development files that appeared recently but were
+    apparently no missed in Debian.
+  * Enable hardening; environment was not available inside $shell command.
+  * Add README.Debian with a notes on sound files available separately.
+  * Bump debhelper version to 13.
+  * Declare files not shipped; build fails under debhelper 13 otherwise.
+  * Remove unused *.install file; remnant from old packaging.
+  * Enable standard CI pipeline on Salsa.
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Fri, 25 Sep 2020 11:28:23 -0700
+
 svxlink (19.09.1-2) unstable; urgency=medium
 
   * Source-only upload for migration to testing.
