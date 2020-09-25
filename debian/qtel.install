@@ -1,0 +1,5 @@
+usr/bin/qtel
+usr/share/qtel/*
+usr/share/applications/qtel.desktop
+usr/share/qtel/translations/*
+usr/share/qtel/sounds/*

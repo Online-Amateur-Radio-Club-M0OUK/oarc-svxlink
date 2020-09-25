@@ -1,0 +1,122 @@
+svxlink (17.12.2-1) unstable; urgency=medium
+
+  * New upstream version
+  * Fixed typo in gpio up script
+  * Set Standards-Version: 4.1.5
+  * Updated renamed lintian tag in source-overrides
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Thu, 12 Jul 2018 10:35:29 -0700
+
+svxlink (17.12.1-2) unstable; urgency=medium
+
+  * Added Build-Depends: librtlsdr-dev to enable new support for dongles
+  * Limited builds to Linux via Arch: linux-any (Closes: #887945)
+  * Switched directory ownership group from daemon to svxlink
+  * Dropped the dbgsym migration code
+  * Updated copyright
+  * Switched to secure URL for copyright format
+  * Removed unused patch for missing $HOME (upstream solved differently)
+  * Marked patch removing old systemd targets as submitted but rejected
+  * Removed directory debian/old
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Tue, 30 Jan 2018 16:05:45 -0800
+
+svxlink (17.12.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * svxlink-calibration-tools now breaks and replaces old svxlink-server
+    (Closes: #886695)
+  * Marked qtel-icons Multi-Arch: foreign
+  * Changed ownership of qso_recorder and propagation_monitor in $datadir
+  * Bumped async library versions to 1.5
+  * Bumped echolib library version to 1.3.3
+  * Set compat to 11
+  * Set Build-Depends: debhelper (>= 11)
+  * Set Standards-Version: 4.1.3
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Mon, 08 Jan 2018 17:36:41 -0800
+
+svxlink (15.11+20171207~git445-380e5333-1) unstable; urgency=medium
+
+  * Pulled new upstream master
+  * Bumped Standards-Version: 4.1.2
+  * Updated maintainer email address
+  * Removed Build-Depends: tcl-dev, qttools5-dev-tools
+  * Changed Build-Depends: libgcrypt20-dev to libgcrypt-dev
+  * Bumped library minor version in lintian-overrides
+  * Placed shared libraries in Section: libs
+  * Manually create icon directories in rules (for Raspbian Jessie)
+  * Shipping svxreflector in new binary package
+  * Shipping calibration tools in a separate binary package
+  * Shipping GPIO auxiliaries in separate architecture independent package
+  * Set make verbosity and install directories in rules instead of patch
+  * Enabled systemd integration in rules
+  * Switched to systemd scripts provided by upstream
+  * Pulled systemd files for svxreflector from Richard Neese
+  * Provided basic init.d file for svxreflector
+  * Removed obsolete syslog.target from systemd service files
+  * Added .gitignore file
+  * Changed package descriptions
+  * Moved CC0 license nearer the original icons
+  * Updated copyright info
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Thu, 07 Dec 2017 14:19:35 -0800
+
+svxlink (15.11-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add upstream patch to fix FTBFS with gcc 7. (Closes: #853672)
+
+ -- Adrian Bunk <bunk@debian.org>  Fri, 01 Sep 2017 16:15:22 +0300
+
+svxlink (15.11-2) unstable; urgency=medium
+
+  * Bugfix release
+  * Referred to $(CURDIR) in rules (Closes: #846703)
+  * Build-Depends: debhelper (>= 10); bumped compat to 10
+  * Dropped Build-Depends: quilt
+  * Switched to new style dbgsym packages
+  * Updated Standards-Version: to 3.9.8
+  * svxlink-server & remotetrx Depend:lsb-base (>= 3.0-6) b/c init scripts
+  * Shipping systemd service files (untested)
+  * Shipping new qtel icons; used them in qtel.desktop (LP: #1591112)
+  * Library packages are Multi-Arch:same
+  * Fixed more spelling errors
+  * Enabled hardening
+
+ -- Felix Lechner <felix.lechner@gmail.com>  Fri, 09 Dec 2016 16:45:49 -0800
+
+svxlink (15.11-1) unstable; urgency=medium
+
+  [ Felix Lechner ]
+  * New upstream release
+  * Changed install locations to multiarch
+  * Increased SONAMES to 1.4 for asyncaudio, asynccpp, asyncqt and asynccore
+
+  [ Colin Tuckley ]
+  * Bump Standards version to 3.9.7 (No changes required).
+
+ -- Felix Lechner <felix.lechner@gmail.com>  Wed, 06 Apr 2016 09:26:50 +0100
+
+svxlink (14.08.1-2) unstable; urgency=medium
+
+  * Support ISO C++ 2011 standard (Closes: #801265)
+
+ -- Felix Lechner <felix.lechner@gmail.com>  Mon, 02 Nov 2015 11:52:39 -0800
+
+svxlink (14.08.1-1) unstable; urgency=medium
+
+  * New upstream version
+  * Pointed Vcs-Git: and Vcs-Browser to Debian packaging, not upstream
+  * Ported package from Qt4 to Qt5
+  * Removed Build-Depends: libqt4-dev
+  * Added Build-Depends: to qtbase5-dev, qttols5-dev, qttools5-dev-tools
+  * Updated lintian-overrides
+
+ -- Felix Lechner <felix.lechner@gmail.com>  Tue, 28 Jul 2015 10:01:22 -0700
+
+svxlink (14.08-1) unstable; urgency=low
+
+  * Initial release (Closes: #733060)
+
+ -- Felix Lechner <felix.lechner@gmail.com>  Tue, 21 Oct 2014 08:52:08 -0700
