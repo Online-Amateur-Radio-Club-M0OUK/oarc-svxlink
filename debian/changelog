@@ -1,3 +1,10 @@
+svxlink (19.09.1-2) unstable; urgency=medium
+
+  * Source-only upload for migration to testing.
+  * Bumped Standards-Version to 4.5.0.
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Tue, 04 Feb 2020 13:54:32 -0800
+
 svxlink (19.09.1-1) unstable; urgency=medium
 
   * New upstream release.

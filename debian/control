@@ -19,7 +19,7 @@ Build-Depends:
  qttools5-dev,
  tk-dev,
  doxygen
-Standards-Version: 4.4.1
+Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.svxlink.org
 
