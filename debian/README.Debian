@@ -1,0 +1,35 @@
+Notice on sound files:
+
+The voice response features in this software work a lot better with
+professionally generated sound files.  Upstream ships several such
+collections that people usually install on their own.
+
+Two prominent ones as 'Heather' for US English and 'Elin' for Swedish.
+
+Debian does not ship the sound files due to licensing and other
+concerns. The concerns fall into two areas:
+
+  1. Some voice generation services are proprietary. Upstream
+     includes written texts, but the generating algorithms are often
+     proprietary or opaque.
+
+     As such, the sound files are binary blobs even though they are
+     readily understood by any adult who speaks the language. Their
+     inclusion in Debian main may therefore be improper.
+
+  2. Some services limit the distribution of the sound files. Most
+     notably, the Acapela-Box service that was used to generate the
+     Heather files states in their Terms of Service:
+
+     "Limitation on Rights on Audio-Files: Except for Radio and TV
+     Broadcast you have all rights on the audio-files purchased
+     through the Service if they conform to this TOS. For Radio and
+     TV Broadcast you have to get a written authorization from Acapela
+     Group."
+
+     Those terms of service appear incompatible with the GPL license
+     upstream included in their distribution of some sound files at
+     the time of writing.
+
+Please do not package sound files for Debian unless such concerns are
+addressed. Otherwise, inclusion 'non-free' may be more appropriate.
