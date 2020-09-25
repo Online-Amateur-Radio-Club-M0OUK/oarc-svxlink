@@ -219,8 +219,9 @@ QsoImpl::QsoImpl(const StationData &station, ModuleEchoLink *module)
 
   prev_src->registerSink(&m_qso);
   prev_src = 0;
-  
-  event_handler = new EventHandler(event_handler_script, 0);
+
+  event_handler = new EventHandler(event_handler_script,
+      module->logicName() + ", module " + module->name());
   event_handler->playFile.connect(
       sigc::bind(mem_fun(*msg_handler, &MsgHandler::playFile), false));
   event_handler->playSilence.connect(
@@ -240,6 +241,10 @@ QsoImpl::QsoImpl(const StationData &station, ModuleEchoLink *module)
   {
     event_handler->setVariable("Logic::CFG_DEFAULT_LANG", default_lang);
   }
+  bool remote_rgr_sound = false;
+  cfg.getValue(cfg_name, "REMOTE_RGR_SOUND", remote_rgr_sound);
+  event_handler->setVariable(module->name() + "::CFG_REMOTE_RGR_SOUND",
+                             remote_rgr_sound ? "1" : "0");
   
   event_handler->initialize();
   
