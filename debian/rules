@@ -3,13 +3,12 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+CPPFLAGS:=$(shell DEB_BUILD_MAINT_OPTIONS=hardening=+all dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell DEB_BUILD_MAINT_OPTIONS=hardening=+all dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
+CXXFLAGS:=$(shell DEB_BUILD_MAINT_OPTIONS=hardening=+all dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
+LDFLAGS:=$(shell DEB_BUILD_MAINT_OPTIONS=hardening=+all dpkg-buildflags --get LDFLAGS)
 
-#CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
-#CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
-#CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
-#LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
-
+# gets rid of warnings like: package could avoid a useless dependency
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 export QT_SELECT=qt5
