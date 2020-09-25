@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Felix Lechner <felix.lechner@lease-up.com>
 Build-Depends-Indep: librsvg2-bin
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper-compat (= 13),
  cmake,
  libcurl4-gnutls-dev,
  libsigc++-2.0-dev (>= 2.2.10-0.2),
