@@ -11,6 +11,6 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
  Categories=Application;HamRadio;Qt;Network;
  Keywords=radio;ham;ptt;
 -Icon=/usr/share/icons/link.xpm
-+Icon=/usr/share/icons/hicolor/128x128/apps/qtel.png
++Icon=qtel
  Comment=The Qt EchoLink Client
  Type=Application
