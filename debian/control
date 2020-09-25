@@ -3,7 +3,7 @@ Section: hamradio
 Priority: optional
 Maintainer: Felix Lechner <felix.lechner@lease-up.com>
 Build-Depends-Indep: librsvg2-bin
-Build-Depends: debhelper (>= 11), cmake,
+Build-Depends: debhelper (>= 12), cmake,
  libsigc++-2.0-dev (>= 2.2.10-0.2),
  libpopt-dev,
  libgcrypt-dev,
@@ -16,11 +16,12 @@ Build-Depends: debhelper (>= 11), cmake,
  qttools5-dev,
  tk-dev,
  doxygen
-Standards-Version: 4.2.1
+Standards-Version: 4.3.0
 Homepage: http://www.svxlink.org
 
 Package: svxlink-server
 Architecture: linux-any
+Pre-Depends: ${misc:Pre-Depends}
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -47,6 +48,7 @@ Description: Voice-over-IP server for ham radio operators
 
 Package: svxreflector
 Architecture: linux-any
+Pre-Depends: ${misc:Pre-Depends}
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
