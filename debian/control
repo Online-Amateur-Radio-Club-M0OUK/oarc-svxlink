@@ -16,7 +16,7 @@ Build-Depends: debhelper (>= 11), cmake,
  qttools5-dev,
  tk-dev,
  doxygen
-Standards-Version: 4.1.5
+Standards-Version: 4.2.1
 Homepage: http://www.svxlink.org
 
 Package: svxlink-server

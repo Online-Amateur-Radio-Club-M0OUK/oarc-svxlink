@@ -1,3 +1,10 @@
+svxlink (17.12.2-2) unstable; urgency=medium
+
+  * Changed logrotate owner uid to svxlink (Closes: #916707)
+  * Bumped Standards-Version: 4.2.1
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Thu, 20 Dec 2018 10:18:04 -0800
+
 svxlink (17.12.2-1) unstable; urgency=medium
 
   * New upstream version
