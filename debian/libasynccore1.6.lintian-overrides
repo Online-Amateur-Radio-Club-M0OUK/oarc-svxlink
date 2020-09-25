@@ -1,0 +1,2 @@
+# symbols files are fragile for C++ libraries
+no-symbols-control-file usr/lib/*/libasynccore.so.1.6.0

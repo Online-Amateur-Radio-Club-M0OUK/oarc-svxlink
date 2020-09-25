@@ -1,3 +1,21 @@
+svxlink (19.09.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Added Build-Depends: libcurl4-gnutls-dev.
+  * Refreshed patches.
+  * Removed patch fixing gpio scripts incorporated upstream.
+  * Switched to debhelper-compat in d/control instead of d/compat.
+  * Bumped Standards-Version to 4.4.1,
+  * Added Rules-Requires-Root: no to d/control.
+  * Set shared object version to 1.6 for
+      - libasynccore
+      - libasyncqt
+      - libasyncaudio
+      - libasynccpp
+  * Fix spelling in manpage for ModuleTrx.conf.
+
+ -- Felix Lechner <felix.lechner@lease-up.com>  Sun, 05 Jan 2020 06:08:29 -0800
+
 svxlink (17.12.2-4) unstable; urgency=medium
 
   * In svxreflector.preinst, create user in addition to group (Closes: #916707)

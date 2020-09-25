@@ -3,7 +3,10 @@ Section: hamradio
 Priority: optional
 Maintainer: Felix Lechner <felix.lechner@lease-up.com>
 Build-Depends-Indep: librsvg2-bin
-Build-Depends: debhelper (>= 12), cmake,
+Build-Depends:
+ debhelper-compat (= 12),
+ cmake,
+ libcurl4-gnutls-dev,
  libsigc++-2.0-dev (>= 2.2.10-0.2),
  libpopt-dev,
  libgcrypt-dev,
@@ -16,7 +19,8 @@ Build-Depends: debhelper (>= 12), cmake,
  qttools5-dev,
  tk-dev,
  doxygen
-Standards-Version: 4.3.0
+Standards-Version: 4.4.1
+Rules-Requires-Root: no
 Homepage: http://www.svxlink.org
 
 Package: svxlink-server
@@ -144,7 +148,7 @@ Description: Icons for graphical client for the EchoLink® protocol
  over the Internet, including remote access to station equipment.
  EchoLink® is a registered trademark of Synergenics, LLC.
 
-Package: libasynccpp1.5
+Package: libasynccpp1.6
 Architecture: linux-any
 Multi-Arch: same
 Section: libs
@@ -162,7 +166,7 @@ Package: libasynccpp-dev
 Architecture: linux-any
 Multi-Arch: same
 Section: libdevel
-Depends: ${misc:Depends}, libasynccpp1.5 (= ${binary:Version})
+Depends: ${misc:Depends}, libasynccpp1.6 (= ${binary:Version})
 Description: AsyncCpp library for SvxLink (development files)
  The SvxLink server provides access to a ham radio transceiver via
  the EchoLink® protocol. This package contains the static
@@ -172,7 +176,7 @@ Description: AsyncCpp library for SvxLink (development files)
  over the Internet, including remote access to station equipment.
  EchoLink® is a registered trademark of Synergenics, LLC.
 
-Package: libasyncaudio1.5
+Package: libasyncaudio1.6
 Architecture: linux-any
 Multi-Arch: same
 Section: libs
@@ -190,7 +194,7 @@ Package: libasyncaudio-dev
 Architecture: linux-any
 Multi-Arch: same
 Section: libdevel
-Depends: ${misc:Depends}, libasyncaudio1.5 (= ${binary:Version})
+Depends: ${misc:Depends}, libasyncaudio1.6 (= ${binary:Version})
 Description: AsyncAudio library for SvxLink (development files)
  The SvxLink server provides access to a ham radio transceiver via
  the EchoLink® protocol. This package contains the static
@@ -200,7 +204,7 @@ Description: AsyncAudio library for SvxLink (development files)
  over the Internet, including remote access to station equipment.
  EchoLink® is a registered trademark of Synergenics, LLC.
 
-Package: libasyncqt1.5
+Package: libasyncqt1.6
 Architecture: linux-any
 Multi-Arch: same
 Section: libs
@@ -218,7 +222,7 @@ Package: libasyncqt-dev
 Architecture: linux-any
 Multi-Arch: same
 Section: libdevel
-Depends: ${misc:Depends}, libasyncqt1.5 (= ${binary:Version})
+Depends: ${misc:Depends}, libasyncqt1.6 (= ${binary:Version})
 Description: AsyncQt library for SvxLink (development files)
  The SvxLink server provides access to a ham radio transceiver via
  the EchoLink® protocol. This package contains the static
@@ -228,7 +232,7 @@ Description: AsyncQt library for SvxLink (development files)
  over the Internet, including remote access to station equipment.
  EchoLink® is a registered trademark of Synergenics, LLC.
 
-Package: libasynccore1.5
+Package: libasynccore1.6
 Architecture: linux-any
 Multi-Arch: same
 Section: libs
@@ -246,7 +250,7 @@ Package: libasynccore-dev
 Architecture: linux-any
 Multi-Arch: same
 Section: libdevel
-Depends: ${misc:Depends}, libasynccore1.5 (= ${binary:Version})
+Depends: ${misc:Depends}, libasynccore1.6 (= ${binary:Version})
 Description: AsyncCore library for SvxLink (development files)
  The SvxLink server provides access to a ham radio transceiver via
  the EchoLink® protocol. This package contains the static

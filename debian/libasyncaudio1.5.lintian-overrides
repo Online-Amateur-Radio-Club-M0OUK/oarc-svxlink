@@ -1,2 +1,0 @@
-# symbols files are fragile for C++ libraries
-libasyncaudio1.5: no-symbols-control-file usr/lib/*/libasyncaudio.so.1.5.0
