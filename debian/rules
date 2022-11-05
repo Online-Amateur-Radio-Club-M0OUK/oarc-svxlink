@@ -8,9 +8,6 @@ CFLAGS:=$(shell DEB_BUILD_MAINT_OPTIONS=hardening=+all dpkg-buildflags --get CFL
 CXXFLAGS:=$(shell DEB_BUILD_MAINT_OPTIONS=hardening=+all dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
 LDFLAGS:=$(shell DEB_BUILD_MAINT_OPTIONS=hardening=+all dpkg-buildflags --get LDFLAGS)
 
-# gets rid of warnings like: package could avoid a useless dependency
-export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-
 export QT_SELECT=qt5
 
 %:
