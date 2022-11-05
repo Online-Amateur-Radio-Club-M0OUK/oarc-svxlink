@@ -66,15 +66,19 @@ override_dh_installinit:
 
 .PHONY: override_dh_installchangelogs
 override_dh_installchangelogs:
+	# svxlink
 	dh_installchangelogs -psvxlink-server src/svxlink/ChangeLog
 	dh_installchangelogs -psvxreflector src/svxlink/ChangeLog
 	dh_installchangelogs -premotetrx src/svxlink/ChangeLog
 	dh_installchangelogs -psvxlink-gpio src/svxlink/ChangeLog
 	dh_installchangelogs -psvxlink-calibration-tools src/svxlink/ChangeLog
+	# qtel
 	dh_installchangelogs -pqtel src/qtel/ChangeLog
 	dh_installchangelogs -pqtel-icons src/qtel/ChangeLog
+	# echolib
 	dh_installchangelogs -plibecholib1.3 src/echolib/ChangeLog
 	dh_installchangelogs -plibecholib-dev src/echolib/ChangeLog
+	# async
 	dh_installchangelogs -plibasynccore1.6 src/async/ChangeLog
 	dh_installchangelogs -plibasynccore-dev src/async/ChangeLog
 	dh_installchangelogs -plibasyncaudio1.6 src/async/ChangeLog
