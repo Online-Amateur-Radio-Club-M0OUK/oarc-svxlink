@@ -52,11 +52,11 @@ override_dh_strip:
 	dh_strip -psvxlink-server
 	dh_strip -premotetrx
 	dh_strip -pqtel
-	dh_strip -plibecholib1.3
-	dh_strip -plibasynccore1.6
-	dh_strip -plibasynccpp1.6
-	dh_strip -plibasyncaudio1.6
-	dh_strip -plibasyncqt1.6
+	dh_strip -plibecholib1.3t64
+	dh_strip -plibasynccore1.6t64
+	dh_strip -plibasynccpp1.6t64
+	dh_strip -plibasyncaudio1.6t64
+	dh_strip -plibasyncqt1.6t64
 	dh_strip
 
 .PHONY: override_dh_installinit
@@ -76,16 +76,16 @@ override_dh_installchangelogs:
 	dh_installchangelogs -pqtel src/qtel/ChangeLog
 	dh_installchangelogs -pqtel-icons src/qtel/ChangeLog
 	# echolib
-	dh_installchangelogs -plibecholib1.3 src/echolib/ChangeLog
+	dh_installchangelogs -plibecholib1.3t64 src/echolib/ChangeLog
 	dh_installchangelogs -plibecholib-dev src/echolib/ChangeLog
 	# async
-	dh_installchangelogs -plibasynccore1.6 src/async/ChangeLog
+	dh_installchangelogs -plibasynccore1.6t64 src/async/ChangeLog
 	dh_installchangelogs -plibasynccore-dev src/async/ChangeLog
-	dh_installchangelogs -plibasyncaudio1.6 src/async/ChangeLog
+	dh_installchangelogs -plibasyncaudio1.6t64 src/async/ChangeLog
 	dh_installchangelogs -plibasyncaudio-dev src/async/ChangeLog
-	dh_installchangelogs -plibasynccpp1.6 src/async/ChangeLog
+	dh_installchangelogs -plibasynccpp1.6t64 src/async/ChangeLog
 	dh_installchangelogs -plibasynccpp-dev src/async/ChangeLog
-	dh_installchangelogs -plibasyncqt1.6 src/async/ChangeLog
+	dh_installchangelogs -plibasyncqt1.6t64 src/async/ChangeLog
 	dh_installchangelogs -plibasyncqt-dev src/async/ChangeLog
 
 #.PHONY: override_dh_fixperms
