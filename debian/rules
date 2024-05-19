@@ -29,8 +29,6 @@ override_dh_auto_configure:
 override_dh_auto_build-indep:
 	mkdir -p $(CURDIR)/debian/icons/generated/64x64/
 	rsvg-convert --width 64 --keep-aspect-ratio $(CURDIR)/debian/icons/original/Transmission-3-edited-recolored.svg > $(CURDIR)/debian/icons/generated/64x64/qtel.png
-	mkdir -p $(CURDIR)/debian/icons/generated/128x128/
-	rsvg-convert --width 128 --keep-aspect-ratio $(CURDIR)/debian/icons/original/Transmission-3-edited-recolored.svg > $(CURDIR)/debian/icons/generated/128x128/qtel.png
 	mkdir -p $(CURDIR)/debian/icons/generated/256x256/
 	rsvg-convert --width 256 --keep-aspect-ratio $(CURDIR)/debian/icons/original/Transmission-3-edited-recolored.svg > $(CURDIR)/debian/icons/generated/256x256/qtel.png
 	dh_auto_build --indep
@@ -40,7 +38,6 @@ override_dh_auto_clean:
 	find $(CURDIR) -name 'moc_*' -execdir rm -fv '{}' \;
 	find $(CURDIR) -name 'qrc_*' -execdir rm -fv '{}' \;
 	-rm $(CURDIR)/debian/icons/generated/64x64/qtel.png
-	-rm $(CURDIR)/debian/icons/generated/128x128/qtel.png
 	-rm $(CURDIR)/debian/icons/generated/256x256/qtel.png
 	dh_auto_clean
 

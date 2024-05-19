@@ -5,8 +5,10 @@ Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
 Build-Depends-Indep: librsvg2-bin
 Build-Depends: dpkg-dev (>= 1.22.5),
  debhelper-compat (= 13),
+ dh-sequence-movetousr,
  cmake,
  libcurl4-gnutls-dev,
+ libjsoncpp-dev,
  libsigc++-2.0-dev (>= 2.2.10-0.2),
  libpopt-dev,
  libgcrypt-dev,

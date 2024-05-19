@@ -2,3 +2,4 @@ etc/default/svxreflector
 etc/svxlink/svxreflector.conf
 lib/systemd/system/svxreflector.service
 usr/bin/svxreflector
+usr/bin/svxreflector-status

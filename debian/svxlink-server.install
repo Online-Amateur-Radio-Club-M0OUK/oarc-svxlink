@@ -2,6 +2,7 @@ usr/bin/svxlink
 usr/lib/*/svxlink/*
 usr/share/svxlink/*
 var/spool/svxlink/*
+etc/svxlink/node_info.json
 etc/svxlink/svxlink.conf
 etc/svxlink/svxlink.d/*
 etc/svxlink/TclVoiceMail.conf

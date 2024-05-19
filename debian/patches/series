@@ -1,7 +1,6 @@
 # quilt series file
 
 fix-spelling.patch
-fix-qtel-desktop-file.patch
 #fix-home-missing-in-environment.patch
 use-default-compile-flags.patch
 remove-obsolete-systemd-targets.patch
