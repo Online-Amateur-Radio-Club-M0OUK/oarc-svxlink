@@ -17,11 +17,12 @@ Build-Depends: dpkg-dev (>= 1.22.5),
  libopus-dev,
  libasound2-dev,
  librtlsdr-dev,
+ libgpiod-dev,
  qtbase5-dev,
  qttools5-dev,
  tk-dev,
  doxygen
-Standards-Version: 4.6.1
+Standards-Version: 4.7.0
 Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/debian-hamradio-team/svxlink.git -b debian/master
 Vcs-Browser: https://salsa.debian.org/debian-hamradio-team/svxlink
@@ -34,8 +35,7 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  svxlink-gpio (= ${source:Version}),
- adduser,
- lsb-base (>= 3.0-6)
+ adduser
 Recommends:
  remotetrx (= ${binary:Version}),
  svxlink-calibration-tools (= ${binary:Version})
@@ -60,8 +60,7 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- adduser,
- lsb-base (>= 3.0-6)
+ adduser
 Description: Conference server for SvxLink amateur radio servers
  The SvxReflector can interconnect multiple SvxLink nodes. Audio sent to
  the reflector is broadcast to all other nodes. Only one talker is
@@ -80,8 +79,7 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  svxlink-gpio (= ${source:Version}),
- adduser,
- lsb-base (>= 3.0-6)
+ adduser
 Recommends:
  svxlink-server (= ${binary:Version}),
  svxlink-calibration-tools (= ${binary:Version})
