@@ -1,2 +1,0 @@
-# Like upstream, ship empty directory for custom sounds
-svxlink-server: package-contains-empty-directory [usr/share/svxlink/sounds/]

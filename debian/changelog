@@ -1,6 +1,6 @@
-svxlink (24.02-2~bpo11+1) bullseye; urgency=medium
+svxlink (24.02-jammy2) jammy; urgency=medium
 
-  * Rebuild for bullseye.
+  * Rebuild for jammy.
 
  -- Dave Hibberd <hibby@debian.org>  Tue, 18 Jun 2024 21:36:44 +0100
 
