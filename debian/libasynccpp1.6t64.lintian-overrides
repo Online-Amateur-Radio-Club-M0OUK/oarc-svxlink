@@ -1,3 +1,0 @@
-# symbols files are fragile for C++ libraries
-no-symbols-control-file usr/lib/*/libasynccpp.so.1.6.0
-libasynccpp1.6t64: package-name-doesnt-match-sonames libasynccpp1.6

@@ -1,6 +1,6 @@
-svxlink (24.02-jammy2) jammy; urgency=medium
+svxlink (24.02-noble2) noble; urgency=medium
 
-  * Rebuild for jammy.
+  * Rebuild for noble.
 
  -- Dave Hibberd <hibby@debian.org>  Tue, 18 Jun 2024 21:36:44 +0100
 
